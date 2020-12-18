@@ -1,7 +1,7 @@
 ---
 # handlers file for wordpress
 - name: restart apache
-  service: 
+  systemd: 
     name: apache2 
-    state: restarted
+    state: reloaded
   become: yes
